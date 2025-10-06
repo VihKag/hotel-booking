@@ -189,3 +189,14 @@ footer a:hover {
     -webkit-animation: shine 0.75s;
     animation: shine 0.75s;
 }
+.bg-image{
+      background-image: url(../src/assets//images/background_13.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    transition: 4s;
+}
