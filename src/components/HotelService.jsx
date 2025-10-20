@@ -11,7 +11,7 @@ const services = [
   {
     icon: (
       // Combo ăn sáng
-      <img class="size-20" id="home-utility-service-image1" loading="lazy" src={img1}></img>
+      <img className="size-20" id="home-utility-service-image1" loading="lazy" src={img1}></img>
     ),
     title: "COMBO ĂN SÁNG:",
     desc: "Phần ăn sáng + 1 ly cà phê",
@@ -19,7 +19,7 @@ const services = [
   {
     icon: (
       // Setup trang trí
-      <img class="size-20" id="home-utility-service-image2" loading="lazy" src={img2}></img>
+      <img className="size-20" id="home-utility-service-image2" loading="lazy" src={img2}></img>
     ),
     title: "SETUP TRANG TRÍ",
     desc: "Các gói trang trí phòng kỷ niệm, trang trí bàn ăn, bath bomb thả bồn",
@@ -27,7 +27,7 @@ const services = [
   {
     icon: (
       // Giặt ủi
-      <img class="size-20" id="home-utility-service-image3" loading="lazy" src={img3}></img>
+      <img className="size-20" id="home-utility-service-image3" loading="lazy" src={img3}></img>
     ),
     title: "GIẶT ỦI",
     desc: "Không lo việc giặt giũ trong suốt kỳ nghỉ của bạn",
@@ -35,7 +35,7 @@ const services = [
   {
     icon: (
       // Đưa đón sân bay
-      <img class="size-20" id="home-utility-service-image4" loading="lazy" src={img4}></img>
+      <img className="size-20" id="home-utility-service-image4" loading="lazy" src={img4}></img>
     ),
     title: "ĐƯA ĐÓN SÂN BAY",
     desc: "Đưa đón xe 7 chỗ và xe 16 chỗ",
@@ -43,7 +43,7 @@ const services = [
   {
     icon: (
       // Tour tham quan du lịch
-            <img class="size-20" id="home-utility-service-image5" loading="lazy" src={img5}></img>
+            <img className="size-20" id="home-utility-service-image5" loading="lazy" src={img5}></img>
     ),
     title: "TOUR THAM QUAN DU LỊCH",
     desc: "Tour khám phá các địa điểm lịch sử tại Sài Gòn, Mekong Delta",
@@ -51,7 +51,7 @@ const services = [
   {
     icon: (
       // Thuê xe máy - ô tô
-      <img class="size-20" id="home-utility-service-image6" loading="lazy" src={img6}></img>
+      <img className="size-20" id="home-utility-service-image6" loading="lazy" src={img6}></img>
     ),
     title: "THUÊ XE MÁY - Ô TÔ",
     desc: "Xe thuê mới, chất lượng tốt và có đầy đủ giấy tờ",
@@ -59,7 +59,7 @@ const services = [
   {
     icon: (
       // Nhà hàng Rock Kitchen&Bar
-      <img class="size-20" id="home-utility-service-image7" loading="lazy" src={img7}></img>
+      <img className="size-20" id="home-utility-service-image7" loading="lazy" src={img7}></img>
     ),
     title: "NHÀ HÀNG ROCK KITCHEN&BAR",
     desc: "Ưu đãi 10% dành riêng cho khách hàng lưu trú tại Nexus House",

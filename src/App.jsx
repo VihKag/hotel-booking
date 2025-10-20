@@ -24,7 +24,7 @@ function App() {
   }, []);
   return (
     <>
-      <div className="w-screen max-w-none overflow-x-hidden container bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      <div className="max-w-none overflow-x-hidden container bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         {/* <Meta /> */}
         <main className="flex-1 min-h-screen w-full bg-white">
           <Suspense fallback={<div>Loading...</div>}>
