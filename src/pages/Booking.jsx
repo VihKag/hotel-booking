@@ -40,7 +40,7 @@ export default function BookingPage() {
       price: 1200000,
       size: "28m²",
       capacity: 2,
-      image: "/placeholder.svg?height=256&width=400",
+      image: "/luxury-hotel-deluxe-room-with-king-bed.jpg",
       amenities: ["Free WiFi", "Smart TV", "Điều hòa", "Minibar", "Két sắt"],
       description: "Phòng tiêu chuẩn với đầy đủ tiện nghi hiện đại",
       rating: 4.7,
@@ -52,7 +52,7 @@ export default function BookingPage() {
       price: 1800000,
       size: "35m²",
       capacity: 2,
-      image: "/placeholder.svg?height=256&width=400",
+      image: "/luxury-hotel-presidential-suite-elegant-interior.jpg",
       amenities: [
         "Free WiFi",
         "Smart TV",
@@ -71,7 +71,7 @@ export default function BookingPage() {
       price: 2800000,
       size: "50m²",
       capacity: 3,
-      image: "/placeholder.svg?height=256&width=400",
+      image: "/luxury-hotel-executive-suite-living-room.jpg",
       amenities: [
         "Free WiFi",
         "Smart TV",
@@ -91,7 +91,7 @@ export default function BookingPage() {
       price: 3200000,
       size: "60m²",
       capacity: 4,
-      image: "/placeholder.svg?height=256&width=400",
+      image: "/luxury-hotel-deluxe-room-with-twin-beds.jpg",
       amenities: [
         "Free WiFi",
         "Smart TV",
@@ -244,10 +244,10 @@ export default function BookingPage() {
                     onClick={() =>
                       setBookingData({ ...bookingData, location: location.id })
                     }
-                    className={`p-6 rounded-lg border-2 transition-all text-left ${
+                    className={`p-2 m-2 rounded-lg border-2 relative overflow-hidden text-left shine-card ${
                       bookingData.location === location.id
-                        ? "border-primary bg-primary/5"
-                        : "border-border hover:border-primary/50"
+                        ? "border-primary bg-primary/5 shine-selected"
+                        : "border-border hover:ring-red-600 hover:ring-2 hover:border-0 focus:ring-2 focus:ring-red-600"
                     }`}
                   >
                     <MapPin className="w-8 h-8 text-primary mb-3" />
@@ -318,7 +318,7 @@ export default function BookingPage() {
                   >
                     <div className="relative h-64">
                       <img
-                        src={`/ceholder-svg-key-pbz42.jpg?key=pbz42&height=256&width=400`}
+                        src={room.image}
                         alt={room.name}
                         className="w-full h-full object-cover"
                       />
