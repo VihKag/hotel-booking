@@ -114,7 +114,6 @@ video {
 }
 .swiper-slide {
   transition: transform 0.5s, opacity 0.5s;
-  opacity: 0.5;
   transform: scale(0.92);
 }
 .swiper-slide-active {
@@ -124,7 +123,7 @@ video {
 }
 .swiper-slide-next,
 .swiper-slide-prev {
-  opacity: 0.8;
+  opacity: 0.7;
   transform: scale(1);
   z-index: 1;
 }
@@ -175,7 +174,6 @@ video {
 }
 footer a {
     font-weight: 300;
-    color: #908d8d;
     text-decoration: none;
 }
 footer .text{
@@ -199,4 +197,50 @@ footer a:hover {
     padding-top: 10vh;
     padding-bottom: 10vh;
     transition: 4s;
+}
+.shine-card {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+/* Lớp ánh sáng */
+.shine-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  opacity: 0;
+}
+
+/* Khi hover – ánh sáng quét qua */
+.shine-card:hover::before {
+  opacity: 1;
+  animation: shine-move 1s ease-in-out forwards;
+}
+
+/* Keyframes điều khiển vệt sáng di chuyển */
+@keyframes shine-move {
+  0% {
+    left: -75%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 125%;
+    opacity: 0;
+  }
 }

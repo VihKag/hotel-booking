@@ -64,14 +64,14 @@ export default function RoomCarousel() {
           {/* Custom Navigation Buttons */}
 <button
   ref={prevRef}
-  className="custom-swiper-nav absolute left-0 top-1/2 -translate-y-1/2 z-10"
+  className="custom-swiper-nav rounded-full absolute left-0 top-1/2 -translate-y-1/2 z-10"
   aria-label="Previous"
 >
   <FontAwesomeIcon icon={faChevronLeft} className="text-2xl" />
 </button>
 <button
   ref={nextRef}
-  className="custom-swiper-nav absolute right-0 top-1/2 -translate-y-1/2 z-10"
+  className="custom-swiper-nav rounded-full absolute right-0 top-1/2 -translate-y-1/2 z-10"
   aria-label="Next"
 >
   <FontAwesomeIcon icon={faChevronRight} className="text-2xl" />

@@ -57,9 +57,7 @@ const rooms = {
 			beds: "1 Queen Bed",
 			amenities: ["Free WiFi", "Balcony", "Pool View", "Smart TV"],
 		},
-	],
-	suite: [
-		{
+				{
 			id: 5,
 			name: "Junior Suite",
 			price: 2200000,
@@ -68,7 +66,10 @@ const rooms = {
 			guests: 3,
 			beds: "1 King Bed",
 			amenities: ["Free WiFi", "Living Area", "Mini Bar", "City View"],
-		},
+		}
+	],
+	suite: [
+
 		{
 			id: 6,
 			name: "Executive Suite",
@@ -249,9 +250,10 @@ export default function RoomTabs() {
 					<Swiper
 						modules={[Navigation]}
 						navigation
-						spaceBetween={24}
 						slidesPerView={1}
+						centeredSlides={true}
 						loop
+						spaceBetween={24}
 						breakpoints={{
 							640: { slidesPerView: 2, spaceBetween: 24 },
 							768: { slidesPerView: 2, spaceBetween: 32 },

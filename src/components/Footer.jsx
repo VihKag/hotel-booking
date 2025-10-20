@@ -14,7 +14,7 @@ export default function Footer() {
               <img
                 src={logoNes}
                 alt="Nexus House"
-                className="h-32 mx-auto"
+                className="h-32 mx-auto shine-card "
                 style={{ objectFit: "contain" }}
               />
             </div>
